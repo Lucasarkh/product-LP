@@ -15,23 +15,39 @@
   </head>
   <body>
     <div>
-      <header>
-        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Linha Profissional</a></li>
-            <li class="breadcrumb-item"><a href="#">Limpeza Pós Obra</a></li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Super Pós Obra 5L - Remove Sujidades
-            </li>
-          </ol>
-        </nav>
-      </header>
       <main>
+        <!-- Seção de compra -->
         <section>
-          <div class="container">
-            <div class="row gx-5">
-              <div class="col-2 text-end container-miniatures">
+          <div class="container-fluid vh-100">
+            <div class="row ps-5 py-5">
+              <div class="col">
+                <nav
+                  style="--bs-breadcrumb-divider: '|'"
+                  aria-label="breadcrumb"
+                >
+                  <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item">
+                      <a href="#">Linha Profissional</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="#">Limpeza Pós Obra</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Super Pós Obra 5L - Remove Sujidades
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row mx-5">
+              <!-- Breadcrumb -->
+
+              <!-- Menu lateral de miniaturas -->
+
+              <div
+                class="col-2 text-end container-miniatures position-relative"
+              >
                 <div class="miniatures overflow-hidden">
                   <img
                     src="assets/miniatures/miniatura_0.png"
@@ -58,6 +74,9 @@
                     alt="imagem miniatura 6"
                   />
                 </div>
+
+                <!-- Botão de navegação das miniaturas -->
+
                 <div class="nav-btn">
                   <button>
                     <img
@@ -75,7 +94,33 @@
                   </button>
                 </div>
               </div>
-              <div class="col-5 big-img d-flex align-items-center">
+
+              <!-- Container da imagem de destaque -->
+
+              <div
+                class="col-6 big-img d-flex align-items-center position-relative"
+              >
+                <!-- Selos -->
+
+                <div class="selo position-absolute top-0 end-0 p-3">
+                  <div>
+                    <img
+                      src="assets/imgs/selo_50_litros.png"
+                      alt="Selo 50 litros"
+                      class="pt-3"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/imgs/selo_preço_litro.png"
+                      alt="Selo preço litro"
+                      class="pt-3"
+                    />
+                  </div>
+                </div>
+
+                <!-- Imagem de destaque -->
+
                 <div class="text-center align-middle">
                   <button
                     type="button"
@@ -95,9 +140,14 @@
                   >
                 </div>
               </div>
-              <div class="col-5 payment-menu-container">
-                <div class="payment-menu text-center">
-                  <div class="row payment-description mx-4">
+
+              <!-- Menu de compra -->
+
+              <div class="col-4 buy-menu-container">
+                <div class="buy-menu text-center">
+                  <!-- Cabeçalho do menu de compras -->
+
+                  <div class="row buy-menu-header mx-4">
                     <div class="col">
                       <h1>SUPER PÓS OBRA 5L - REMOVE SUJIDADES</h1>
                       <p>REF: 14543183</p>
@@ -128,7 +178,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row pricing mx-4">
+
+                  <!-- Corpo de menu de compras -->
+
+                  <div class="row buy-menu-main mx-4">
                     <div class="col-12 h-100">
                       <div>
                         <h2 class="pt-3">R$75,00</h2>
@@ -158,13 +211,196 @@
                         >
                       </div>
                       <div class="resale-btn">
-                        <button type="button" class="w-100">
+                        <button type="button" class="btn w-100">
                           Revenda e Lucre
                         </button>
                       </div>
                     </div>
                   </div>
+
+                  <!-- Rodapé do menu de compra -->
+
+                  <div class="row buy-menu-footer mx-auto">
+                    <div class="col">
+                      <div
+                        class="d-flex justify-content-center align-items-center mt-1"
+                      >
+                        <img src="assets/delivery_img.png" alt="Delivery" />
+                        <p class="ms-2 m-0">Frete e prazo de entrega</p>
+                      </div>
+                      <div
+                        class="delivery-tax-btn mt-3 d-flex justify-content-between align-items-center w-75 mx-auto"
+                      >
+                        <input class="w-75" type="text" />
+                        <button class="w-25 me-5">CALCULAR</button>
+                      </div>
+                    </div>
+                    <table class="table table-borderless mx-auto mt-4">
+                      <thead class="table-color">
+                        <tr>
+                          <th scope="col">Frete</th>
+                          <th scope="col">Valor</th>
+                          <th scope="col">Prazo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-half-color">
+                          <td>CORREIOS PAC</td>
+                          <td>R$ 22,49</td>
+                          <td>5 a 6 dias úteis.</td>
+                        </tr>
+                        <tr class="table-color">
+                          <td>CORREIOS Sedex</td>
+                          <td>R$ 31,72</td>
+                          <td>2 a 3 dias úteis.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Menu de navegação de tópicos -->
+
+        <section>
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="col d-flex justify-content-center w-100 nav-info-container"
+              >
+                <div class="button-container">
+                  <a href="#o-que-e"><button>O que é?</button></a>
+                </div>
+                <div class="button-container">
+                  <a href="#"><button>Benefícios do Super Pós Obra?</button></a>
+                </div>
+                <div class="button-container">
+                  <a href="#"><button>Como usar?</button></a>
+                </div>
+                <div class="button-container">
+                  <a href="#"><button>Descrição</button></a>
+                </div>
+                <div class="button-container">
+                  <a href="#"><button>Quem é a Policlean Oirad?</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção o que é -->
+
+        <section id="o-que-e">
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="col-12 vw-100 position-relative product-info d-flex p-0"
+              >
+                <div class="w-50 container-product-text">
+                  <div class="product-text">
+                    <h1>O que é?</h1>
+                    <p>Detergente desincrustante pós obra.</p>
+                    <p>
+                      Indicado para limpeza pesada das sujidades do pós-obra,
+                      principalmente de resíduos como: excesso de rejunte,
+                      argamassa, cimento, gesso, terra e respingos de tinta*.
+                    </p>
+                    <span
+                      >*Somente respingos recentes de tintas à base de
+                      água</span
+                    >
+                  </div>
+                  <div class="product-text">
+                    <h1>Indicação de uso</h1>
+                    <p>
+                      Ideal para uso em superfícies laváveis e em pisos de
+                      porcelanato, cerâmicos, cotto/lajotas, cimentícios,
+                      granito, granilite, pastilhas, azulejos, antiderrapantes e
+                      pedras porosas, equipamentos como betoneiras e também
+                      materiais usados em uma reforma ou construção..
+                    </p>
+                  </div>
+                  <div class="product-text">
+                    <h1>Tipos de superfícies que podem ser tratadas:</h1>
+                    <p>
+                      Devido a versatilidade do produto, ele pode ser utilizado
+                      em todo tipo de piso lavável. Para pisos que possuem
+                      acabamento com brilho, o ideal é utilizar a diluição de
+                      limpeza leve e aplicar em pequenas partes por vez, para
+                      que o produto não seque sobre o piso.
+                    </p>
+                  </div>
+                </div>
+                <div class="w-50">
+                  <img
+                    src="assets/imgs/77578021_l.jpg"
+                    alt="Imagem do piso limpo"
+                    class="w-100 h-100 product-img-bg"
+                  />
+
+                  <div class="mockup-com-capa">
+                    <img
+                      src="assets/imgs/mockup-com-capa.png"
+                      alt="mockup com capa"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="container-text-info-footer position-absolute">
+                  <div
+                    class="wx-auto text-info-footer d-flex justify-content-evenly"
+                  >
+                    <div class="d-flex align-items-center w-25">
+                      <div>
+                        <img src="assets/imgs/ladrilho.png" alt="" />
+                      </div>
+                      <div class="ps-4">
+                        <p class="m-0">
+                          Eficaz na limpeza de pisos cerâmicos, pedras e
+                          porcelanatos
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center w-25">
+                      <div>
+                        <img src="assets/imgs/pa.png" alt="Pá no entulho" />
+                      </div>
+                      <div class="ps-4">
+                        <p class="m-0">
+                          Remove resíduos deixados ao término da obra
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center w-25">
+                      <div>
+                        <img src="assets/imgs/gota.png" alt="" />
+                      </div>
+                      <div class="ps-4">
+                        <p class="m-0">5 LITROS (CONCENTRADO)</p>
+                        <span>RENDE ATÉ 50 LITROS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="vw-100 position-relative">
+                  <img
+                    class="w-100"
+                    src="assets/imgs/96686892_l.jpg"
+                    alt="Familia feliz"
+                  />
+                </div>
+                <div></div>
               </div>
             </div>
           </div>
