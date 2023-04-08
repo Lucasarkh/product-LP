@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
     <title>Document</title>
   </head>
@@ -18,8 +16,8 @@
       <main>
         <!-- Seção de compra -->
         <section>
-          <div class="container-fluid vh-100">
-            <div class="row ps-5 py-5">
+          <div class="container-fluid">
+            <div class="row d-none d-md-block">
               <div class="col">
                 <nav
                   style="--bs-breadcrumb-divider: '|'"
@@ -40,13 +38,13 @@
                 </nav>
               </div>
             </div>
-            <div class="row mx-5">
+            <div class="row mx-1">
               <!-- Breadcrumb -->
 
               <!-- Menu lateral de miniaturas -->
 
               <div
-                class="col-2 text-end container-miniatures position-relative"
+                class="d-none d-md-none d-lg-block d-xxl-block col-lg-2 text-end container-miniatures position-relative"
               >
                 <div class="miniatures overflow-hidden">
                   <img
@@ -96,58 +94,54 @@
               </div>
 
               <!-- Container da imagem de destaque -->
-
-              <div
-                class="col-6 big-img d-flex align-items-center position-relative"
-              >
-                <!-- Selos -->
-
-                <div class="selo position-absolute top-0 end-0 p-3">
-                  <div>
-                    <img
-                      src="assets/imgs/selo_50_litros.png"
-                      alt="Selo 50 litros"
-                      class="pt-3"
-                    />
+              <div class="d-none d-lg-block col-12 col-lg-6 p-2">
+                <div class="d-flex align-items-center big-img">
+                  <div class="selo position-absolute top-0 end-0 p-3 d-none">
+                    <div>
+                      <img
+                        src="assets/imgs/selo_50_litros.png"
+                        alt="Selo 50 litros"
+                        class="pt-3 img-fluid"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="assets/imgs/selo_preço_litro.png"
+                        alt="Selo preço litro"
+                        class="pt-3 img-fluid"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <img
-                      src="assets/imgs/selo_preço_litro.png"
-                      alt="Selo preço litro"
-                      class="pt-3"
-                    />
+
+                  <!-- Imagem de destaque -->
+
+                  <div class="text-center align-middle">
+                    <button
+                      type="button"
+                      class="border-0 bg-transparent"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-img"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="assets/img_destaque.png"
+                        alt="Imagem do produto"
+                      />
+                    </button>
+                    <span
+                      >*Valor por litro diluído considerando diluição para
+                      limpeza leve</span
+                    >
                   </div>
-                </div>
-
-                <!-- Imagem de destaque -->
-
-                <div class="text-center align-middle">
-                  <button
-                    type="button"
-                    class="border-0 bg-transparent"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modal-img"
-                  >
-                    <img
-                      class="img-fluid"
-                      src="assets/img_destaque.png"
-                      alt="Imagem do produto"
-                    />
-                  </button>
-                  <span
-                    >*Valor por litro diluído considerando diluição para limpeza
-                    leve</span
-                  >
                 </div>
               </div>
-
               <!-- Menu de compra -->
 
-              <div class="col-4 buy-menu-container">
+              <div class="col-12 col-lg-4 p-2">
                 <div class="buy-menu text-center">
                   <!-- Cabeçalho do menu de compras -->
 
-                  <div class="row buy-menu-header mx-4">
+                  <div class="row buy-menu-header mt-3">
                     <div class="col">
                       <h1>SUPER PÓS OBRA 5L - REMOVE SUJIDADES</h1>
                       <p>REF: 14543183</p>
@@ -180,6 +174,86 @@
                   </div>
 
                   <!-- Corpo de menu de compras -->
+                  <!-- Carrossel -->
+                  <div class="d-md-block d-lg-none">
+                    <div
+                      id="carouselExampleIndicators"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="assets/imgs/mockup_super_pos_obra_principal_5l.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="assets/imgs/mockup_super_pos_obra_principal_5l.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="assets/imgs/mockup_super_pos_obra_principal_5l.png"
+                            class="d-block w-100"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Preços e botões de compra -->
 
                   <div class="row buy-menu-main mx-4">
                     <div class="col-12 h-100">
@@ -199,7 +273,7 @@
                         </div>
                         <div class="buy-btn w-75 ps-3">
                           <button type="button" class="btn w-100">
-                            comprar
+                            Comprar
                           </button>
                         </div>
                       </div>
@@ -212,7 +286,7 @@
                       </div>
                       <div class="resale-btn">
                         <button type="button" class="btn w-100">
-                          Revenda e Lucre
+                          Revenda e lucre
                         </button>
                       </div>
                     </div>
@@ -266,11 +340,9 @@
         <!-- Menu de navegação de tópicos -->
 
         <section>
-          <div class="container-fluid">
+          <div class="container-fluid my-5">
             <div class="row">
-              <div
-                class="col d-flex justify-content-center w-100 nav-info-container"
-              >
+              <div class="col d-flex justify-content-center flex-wrap">
                 <div class="button-container">
                   <a href="#o-que-e"><button>O que é?</button></a>
                 </div>
@@ -294,12 +366,10 @@
         <!-- Seção o que é -->
 
         <section id="o-que-e">
-          <div class="container-fluid">
+          <div class="container-fluid d-none d-xl-block">
             <div class="row">
-              <div
-                class="col-12 vw-100 position-relative product-info d-flex p-0"
-              >
-                <div class="w-50 container-product-text">
+              <div class="col-12 vw-100 position-relative h-auto d-flex p-0">
+                <div class="w-100 container-product-text">
                   <div class="product-text">
                     <h1>O que é?</h1>
                     <p>Detergente desincrustante pós obra.</p>
@@ -334,9 +404,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="w-50">
+                <div class="w-100">
                   <img
-                    src="assets/imgs/77578021_l.jpg"
+                    src="assets/imgs/piso.jpg"
                     alt="Imagem do piso limpo"
                     class="w-100 h-100 product-img-bg"
                   />
@@ -349,38 +419,39 @@
                     />
                   </div>
                 </div>
-                <div class="container-text-info-footer position-absolute">
+                <div class="container-text-info-footer">
                   <div
                     class="wx-auto text-info-footer d-flex justify-content-evenly"
                   >
-                    <div class="d-flex align-items-center w-25">
+                    <div class="d-flex align-items-center">
                       <div>
                         <img src="assets/imgs/ladrilho.png" alt="" />
                       </div>
-                      <div class="ps-4">
+                      <div class="w-50 ps-4">
                         <p class="m-0">
                           Eficaz na limpeza de pisos cerâmicos, pedras e
                           porcelanatos
                         </p>
                       </div>
-                    </div>
-                    <div class="d-flex align-items-center w-25">
-                      <div>
-                        <img src="assets/imgs/pa.png" alt="Pá no entulho" />
+
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <img src="assets/imgs/pa.png" alt="Pá no entulho" />
+                        </div>
+                        <div class="w-50 ps-4">
+                          <p class="m-0">
+                            Remove resíduos deixados ao término da obra
+                          </p>
+                        </div>
                       </div>
-                      <div class="ps-4">
-                        <p class="m-0">
-                          Remove resíduos deixados ao término da obra
-                        </p>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center w-25">
-                      <div>
-                        <img src="assets/imgs/gota.png" alt="" />
-                      </div>
-                      <div class="ps-4">
-                        <p class="m-0">5 LITROS (CONCENTRADO)</p>
-                        <span>RENDE ATÉ 50 LITROS</span>
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <img src="assets/imgs/gota.png" alt="" />
+                        </div>
+                        <div class="w-50 ps-4">
+                          <p class="m-0">5 LITROS (CONCENTRADO)</p>
+                          <span>RENDE ATÉ 50 LITROS</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -389,18 +460,382 @@
             </div>
           </div>
         </section>
+
+        <!-- Seção Beneficios pós obra -->
         <section>
-          <div class="container-fluid">
+          <div class="container-fluid d-none d-xl-block">
             <div class="row">
-              <div class="col-12">
-                <div class="vw-100 position-relative">
-                  <img
-                    class="w-100"
-                    src="assets/imgs/96686892_l.jpg"
-                    alt="Familia feliz"
-                  />
+              <div class="col position-relative p-0">
+                <img
+                  class="w-100"
+                  src="assets/imgs/familia.jpg"
+                  alt="Familia Feliz"
+                />
+                <div
+                  class="benefits-text-container position-absolute top-0 bottom-0 my-auto rounded d-flex align-items-center"
+                >
+                  <div class="benefits-text">
+                    <h1 class="mb-4">Beneficios do pós obra:</h1>
+                    <div class="d-flex flex-column justify-content-center w-75">
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p>
+                          Remove os resíduos de obra com eficácia e sem agredir
+                          as superfícies;
+                        </p>
+                      </div>
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p>
+                          Ideal em ambientes com excesso de concreto, cimento,
+                          reboco, argamassa, cal, rejuntes, gesso e terra em
+                          obras;
+                        </p>
+                      </div>
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p>
+                          Remove respingos de tintas de base água recentes em
+                          pisos não porosos;
+                        </p>
+                      </div>
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p>
+                          Muito versátil: Ótimo para quem presta serviços (uso
+                          profissional). Excelente para residências (uso
+                          doméstico);
+                        </p>
+                      </div>
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p>Acabamento perfeito para sua obra.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção "Como usar" -->
+
+        <section class="instructions-container">
+          <div class="container-fluid d-none d-xl-block pt-5">
+            <div class="row">
+              <div class="col-12 p-0">
+                <!-- Passo a passo -->
+                <div class="text-center">
+                  <h1 class="mb-5">Como usar?</h1>
+                </div>
+                <div class="d-flex justify-content-evenly flex-wrap px-5">
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">1</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">2</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">3</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">4</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">5</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Diluição -->
+
+            <div class="row">
+              <div class="col p-0">
+                <div class="px-5 d-flex justify-content-center">
+                  <div class="diluition-container text-cente position-relative">
+                    <div class="">
+                      <h1 class="m-o">Diluição</h1>
+                    </div>
+                    <div class="d-flex align-items-center diluition-img">
+                      <div class="d-flex justify-content-evenly w-100">
+                        <div class="d-flex flex-column align-items-center w-50">
+                          <p>Limpeza pesada até</p>
+                          <img
+                            class="w-100"
+                            src="assets/imgs/diluicao1.png"
+                            alt="Diluição limpeza pesada"
+                          />
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center w-50">
+                          <p>Limpeza média até</p>
+                          <img
+                            class="w-100"
+                            src="assets/imgs/diluicao2.png"
+                            alt=" Diluição limpeza média"
+                          />
+                        </div>
+                        <div class="d-flex flex-column align-items-center w-50">
+                          <p>Limpeza leve até</p>
+                          <img
+                            class="w-100"
+                            src="assets/imgs/diluicao3.png"
+                            alt="Diluição limpeza leve"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE-->
+
+        <!-- Seção mobile "O que é" -->
+        <section>
+          <div class="container-fluid d-xl-none overflow-hidden p-0">
+            <div class="row">
+              <div class="col-12 p-0">
+                <div
+                  class="w-100 container-product-text-mobile d-flex align-items-center justify-content-center flex-column"
+                >
+                  <div class="m-3 w-75">
+                    <h1>O que é?</h1>
+                    <p>Detergente desincrustante pós obra.</p>
+                    <p>
+                      Indicado para limpeza pesada das sujidades do pós-obra,
+                      principalmente de resíduos como: excesso de rejunte,
+                      argamassa, cimento, gesso, terra e respingos de tinta*.
+                    </p>
+                    <span
+                      >*Somente respingos recentes de tintas à base de
+                      água</span
+                    >
+                  </div>
+                  <div class="m-3 w-75">
+                    <h1>Indicação de uso</h1>
+                    <p>
+                      Ideal para uso em superfícies laváveis e em pisos de
+                      porcelanato, cerâmicos, cotto/lajotas, cimentícios,
+                      granito, granilite, pastilhas, azulejos, antiderrapantes e
+                      pedras porosas, equipamentos como betoneiras e também
+                      materiais usados em uma reforma ou construção..
+                    </p>
+                  </div>
+                  <div class="m-3 w-75">
+                    <h1>Tipos de superfícies que podem ser tratadas:</h1>
+                    <p>
+                      Devido a versatilidade do produto, ele pode ser utilizado
+                      em todo tipo de piso lavável. Para pisos que possuem
+                      acabamento com brilho, o ideal é utilizar a diluição de
+                      limpeza leve e aplicar em pequenas partes por vez, para
+                      que o produto não seque sobre o piso.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="position-relative h-auto">
+              <img
+                class="p-0 w-100"
+                src="assets/imgs/piso.jpg"
+                alt="Imagem do piso"
+              />
+              <img
+                class="mockup-com-capa-mobile"
+                src="assets/imgs/mockup-com-capa.png"
+                alt="Imagem Mockup"
+              />
+            </div>
+
+            <!-- Beneficios mobile -->
+            <div class="p-3 benefits-mobile">
+              <div class="d-flex justify-content-center align-items-center p-3">
+                <div class="benefits-mobile">
+                  <img src="assets/imgs/ladrilho.png" alt="" />
+                </div>
+                <div class="w-50 ps-4">
+                  <p class="m-0">
+                    Eficaz na limpeza de pisos cerâmicos, pedras e porcelanatos
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center p-3">
+                <div>
+                  <img src="assets/imgs/pa.png" alt="Pá no entulho" />
+                </div>
+                <div class="w-50 ps-4">
+                  <p class="m-0">Remove resíduos deixados ao término da obra</p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center p-3">
+                <div>
+                  <img src="assets/imgs/gota.png" alt="" />
+                </div>
+                <div class="w-50 ps-4">
+                  <p class="m-0">5 LITROS (CONCENTRADO)</p>
+                  <span>RENDE ATÉ 50 LITROS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção dos beneficios pós obra mobile -->
+
+        <section>
+          <div class="container-fluid d-xl-none">
+            <div class="row">
+              <div class="col position-relative p-0">
+                <img
+                  class="w-100"
+                  src="assets/imgs/familia.jpg"
+                  alt="Familia Feliz"
+                />
+                <div
+                  class="benefits-text-mobile h-auto w-100 d-flex justify-content-center py-4"
+                >
+                  <div class="w-75">
+                    <h1 class="mb-4">Beneficios do pós obra:</h1>
+                    <div class="d-flex flex-column justify-content-center">
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p class="m-0 ms-4">
+                          Remove os resíduos de obra com eficácia e sem agredir
+                          as superfícies;
+                        </p>
+                      </div>
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p class="m-0 ms-4">
+                          Ideal em ambientes com excesso de concreto, cimento,
+                          reboco, argamassa, cal, rejuntes, gesso e terra em
+                          obras;
+                        </p>
+                      </div>
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p class="m-0 ms-4">
+                          Remove respingos de tintas de base água recentes em
+                          pisos não porosos;
+                        </p>
+                      </div>
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p class="m-0 ms-4">
+                          Muito versátil: Ótimo para quem presta serviços (uso
+                          profissional). Excelente para residências (uso
+                          doméstico);
+                        </p>
+                      </div>
+                      <div class="my-2 d-flex align-items-center">
+                        <img src="assets/imgs/pointer-img.png" alt="Marcador" />
+                        <p class="m-0 ms-4">
+                          Acabamento perfeito para sua obra.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seção "Como usar" mobile -->
+
+        <section class="instructions-container d-xl-none">
+          <div class="container-fluid pt-5">
+            <div class="row">
+              <div class="col-12 p-0">
+                <!-- Passo a passo -->
+                <div class="text-center">
+                  <h1 class="mb-5">Como usar?</h1>
+                </div>
+                <div class="d-flex justify-content-evenly flex-wrap px-5">
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">1</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">2</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">3</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">4</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                  <div class="instruction-card position-relative my-5">
+                    <div class="instruction-card-number mx-auto start-0 end-0">
+                      <p class="m-0">5</p>
+                    </div>
+                    <p class="px-3 text-center">
+                      Diluir de acordo com o grau de sujidade. Não recomendamos
+                      a utilização do produto puro
+                    </p>
+                  </div>
+                </div>
+                <!-- Diluição -->
               </div>
             </div>
           </div>
@@ -433,10 +868,6 @@
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
