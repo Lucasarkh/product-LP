@@ -295,6 +295,8 @@ ol li a {
   font-weight: bold;
 }
 
+/**********  SEÇÃO: BENEFICIOS PÓS OBRA  **********/
+
 .benefits-text-container {
   width: 650px;
   background: #004c98;
@@ -316,6 +318,8 @@ ol li a {
   margin: 0;
   margin-left: 16px;
 }
+
+/**********  SEÇÃO: BENEFICIOS PÓS OBRA  **********/
 
 .instructions-container {
   background: #83bdd6;
@@ -353,6 +357,8 @@ ol li a {
   font-size: 40px;
   font-weight: bold;
 }
+
+/**********  DILUIÇÃO  **********/
 
 .diluition-container {
   border: 1px solid #004c98;
@@ -417,6 +423,8 @@ ol li a {
   background-color: #00f5ff;
 }
 
+/**********  SEÇÃO: O QUE FAZER PÓS LIMPEZA  **********/
+
 .what-to-do-container {
   background: #83bdd6;
   color: #004c98;
@@ -461,6 +469,8 @@ ol li a {
   width: 100px;
 }
 
+/**********  SEÇÃO: QUEM É A POLICLEAN  **********/
+
 .about-company-container {
   background: #004c98;
   color: white;
@@ -474,6 +484,8 @@ ol li a {
   width: 808px;
   padding-right: 40px;
 }
+
+/**********  SEÇÃO: PARA QUE SERVEO ALCOOL GRAXO  **********/
 
 .recommendation-container {
   height: 864px;
@@ -496,6 +508,8 @@ ol li a {
 .recommendation-container-text h1 {
   font-size: 36px;
 }
+
+/**********  FOOTER  **********/
 
 footer {
   background: #004c98;
@@ -536,7 +550,9 @@ footer li a {
   color: #248fbe;
 }
 
-/**********  Mobile  **********/
+/**********  MOBILE  **********/
+
+/**********  AJUSTES DE RESPONSIVIDADE  **********/
 
 .container-product-text-mobile {
   padding: 80px 0;
@@ -575,6 +591,8 @@ footer li a {
   background: #004c98;
   color: white;
 }
+
+/**********  SEÇÃO: COMO USAR | MOBILE **********/
 
 .diluition-container-mobile {
   border: 1px solid #004c98;
@@ -618,6 +636,8 @@ footer li a {
   background-color: #00f5ff;
 }
 
+/**********  SEÇÃO: PARA QUE SERVE O ALCOOL GRAXO | MOBILE **********/
+
 .recommendation-container-text-mobile {
   background: white;
   width: 100%;
@@ -626,8 +646,30 @@ footer li a {
   color: #004c98;
 }
 
+/**********  SEÇÃO: O QUE FAZER PÓS LIMPEZA | MOBILE  **********/
+
 @media (max-width: 1200px) {
   .footer-info-mobile {
+    width: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-info-mobile {
+    width: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-info-mobile {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-info-mobile-flex {
+    justify-content: center;
   }
 }
