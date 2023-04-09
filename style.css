@@ -499,6 +499,41 @@ ol li a {
 
 footer {
   background: #004c98;
+  color: white;
+  height: auto;
+  width: 100%;
+}
+
+footer h2 {
+  font-size: 20px;
+  color: #83bdd6;
+}
+
+footer li {
+  padding: 4px;
+  list-style-type: none;
+}
+
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-info {
+  height: 1px;
+  width: 80%;
+  background: white;
+  margin: 0 auto;
+}
+
+.social-media-footer {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.copyright {
+  background: white;
+  color: #248fbe;
 }
 
 /**********  Mobile  **********/
@@ -587,7 +622,6 @@ footer {
   background: white;
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  padding: 72px 80px 0 80px;
+  padding: 72px 40px 0 40px;
   color: #004c98;
 }
