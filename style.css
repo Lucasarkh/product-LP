@@ -432,10 +432,63 @@ ol li a {
 }
 
 .caution-circle {
-  height: 100px;
-  width: 100px;
-  border: 1px solid black;
+  top: 100px;
+  height: 500px;
+  width: 500px;
+  border: 1px solid #004c98;
   border-radius: 50%;
+}
+
+.container-caution-img {
+  height: 647px;
+}
+
+.caution-img img {
+  width: 555px;
+  padding-left: 50px;
+}
+
+.caution-text {
+  margin-top: 80px;
+  width: 540px;
+}
+
+.caution-text p {
+  font-weight: normal;
+}
+
+.caution-text p:last-child {
+  color: #f0f0f0;
+}
+
+.caution-text img {
+  width: 100px;
+}
+
+.about-company-container {
+  background: #004c98;
+  color: white;
+}
+
+.about-company-container img {
+  width: 300px;
+  height: 300px;
+}
+
+.recommendation-container {
+  height: 864px;
+}
+
+.recommendation-container img {
+  object-fit: cover;
+}
+
+.recommendation-container-text {
+  margin-left: 140px;
+  background: white;
+  width: 812px;
+  height: 700px;
+  border-radius: 10px;
 }
 
 /**********  Mobile  **********/
