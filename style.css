@@ -427,10 +427,6 @@ ol li a {
   border-radius: 10px;
 }
 
-.what-to-do-description {
-  margin-left: 200px;
-}
-
 .caution-circle {
   top: 100px;
   height: 500px;
@@ -471,8 +467,12 @@ ol li a {
 }
 
 .about-company-container img {
-  width: 300px;
-  height: 300px;
+  width: 70%;
+}
+
+.about-company-text-container {
+  width: 808px;
+  padding-right: 40px;
 }
 
 .recommendation-container {
@@ -489,6 +489,16 @@ ol li a {
   width: 812px;
   height: 700px;
   border-radius: 10px;
+  padding: 72px 80px 0 80px;
+  color: #004c98;
+}
+
+.recommendation-container-text h1 {
+  font-size: 36px;
+}
+
+footer {
+  background: #004c98;
 }
 
 /**********  Mobile  **********/
@@ -571,4 +581,13 @@ ol li a {
   width: 30px;
   border-radius: 50%;
   background-color: #00f5ff;
+}
+
+.recommendation-container-text-mobile {
+  background: white;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding: 72px 80px 0 80px;
+  color: #004c98;
 }
