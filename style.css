@@ -625,3 +625,9 @@ footer li a {
   padding: 72px 40px 0 40px;
   color: #004c98;
 }
+
+@media (max-width: 1200px) {
+  .footer-info-mobile {
+    width: 100%;
+  }
+}
