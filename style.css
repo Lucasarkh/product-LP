@@ -44,7 +44,7 @@ ol li a {
 .big-img {
   border: 1px solid #e2e2e2;
   border-radius: 5px;
-  height: 750px;
+  height: 100%;
   position: relative;
 }
 
@@ -53,10 +53,6 @@ ol li a {
 }
 
 .big-img span {
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  right: 0;
   width: 100%;
   font-size: 14px;
   color: #adadad;
@@ -66,10 +62,7 @@ ol li a {
   width: 200px;
 }
 
-.buy-menu-container {
-  position: relative;
-  height: 750px;
-}
+/***********  Menu de compra **********/
 
 .buy-menu {
   position: relative;
@@ -77,8 +70,9 @@ ol li a {
   height: 100%;
   border: 1px solid #e2e2e2;
   border-radius: 5px;
-  padding: 16px;
 }
+
+/**********  Header do menu de compra **********/
 
 .buy-menu-header h1 {
   font-size: 20px;
@@ -102,6 +96,8 @@ ol li a {
   margin: 16px 40px;
   opacity: 0.5;
 }
+
+/**********  Main do menu de compra **********/
 
 .buy-menu-main h2 {
   font-size: 48px;
@@ -224,7 +220,7 @@ ol li a {
 .button-container {
   width: 312px;
   height: 135px;
-  margin: 0 8px;
+  margin: 4px 8px;
 }
 
 .button-container button {
@@ -240,9 +236,6 @@ ol li a {
 }
 
 /**********  SEÇÃO: O QUE É  **********/
-.product-info {
-  height: 120vh;
-}
 
 .product-text h1 {
   font-weight: bold;
@@ -253,6 +246,7 @@ ol li a {
   color: white;
   background: #004c98;
   padding-top: 80px;
+  padding-bottom: 200px;
 }
 
 .product-text {
@@ -266,17 +260,17 @@ ol li a {
 
 .mockup-com-capa {
   position: absolute;
-  bottom: 20vh;
-  right: 13vw;
+  bottom: 18vh;
+  left: 40vw;
 }
 
 .mockup-com-capa img {
-  width: 47vw;
+  width: 850px;
 }
 
 .container-text-info-footer {
   position: absolute;
-  bottom: 7vh;
+  bottom: 40px;
   width: 100%;
   height: 150px;
   padding: 0 140px;
@@ -297,6 +291,231 @@ ol li a {
 }
 
 .text-info-footer p {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
+}
+
+.benefits-text-container {
+  width: 650px;
+  background: #004c98;
+  height: 500px;
+  right: 100px;
+}
+
+.benefits-text {
+  margin: 24px 0 0 80px;
+  color: white;
+}
+
+.benefits-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.benefits-text p {
+  margin: 0;
+  margin-left: 16px;
+}
+
+.instructions-container {
+  background: #83bdd6;
+  color: #004c98;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.instructions-container h1 {
+  font-size: 36px;
+  color: #004c98;
+  font-weight: bold;
+}
+
+.instruction-card {
+  width: 312px;
+  height: 200px;
+  background: #004c98;
+  border-radius: 10px;
+  color: white;
+  padding-top: 80px;
+  font-size: 16px;
+}
+
+.instruction-card-number {
+  position: absolute;
+  top: -35px;
+  text-align: center;
+  vertical-align: middle;
+  color: #004c98;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.diluition-container {
+  border: 1px solid #004c98;
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  color: #004c98;
+  font-weight: bold;
+}
+
+.diluition-container h1 {
+  position: absolute;
+  top: -25px;
+  margin: 0 auto;
+  left: 40%;
+  right: 40%;
+  text-align: center;
+  background-color: #83bdd6;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.proportion {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.proportion p {
+  font-size: 24px;
+}
+
+.ml-proportion {
+  border: 1px solid white;
+  padding: 2px 16px;
+  border-radius: 30px;
+}
+
+.ml-proportion p {
+  color: white;
+}
+
+.diluition-reference {
+  width: 40vw;
+  padding: 8px 16px;
+  border: 1px solid #004c98;
+  border-radius: 30px;
+}
+
+.diluition-reference .pink-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #e23968;
+}
+
+.diluition-reference .blue-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #00f5ff;
+}
+
+.what-to-do-container {
+  background: #83bdd6;
+  color: #004c98;
+}
+
+.what-to-do-description-container {
+  background: #b4dbec;
+  border-radius: 10px;
+}
+
+.what-to-do-description {
+  margin-left: 200px;
+}
+
+.caution-circle {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/**********  Mobile  **********/
+
+.container-product-text-mobile {
+  padding: 80px 0;
+
+  color: white;
+  background: #004c98;
+}
+
+.mockup-com-capa-mobile {
+  width: 70%;
+  position: absolute;
+  left: 15vw;
+  bottom: 16px;
+}
+
+.container-img-mobile {
+  width: 30px;
+}
+
+.benefits-mobile img {
+  border-radius: 50%;
+  width: 120px;
+}
+
+.benefits-mobile p {
+  color: #004c98;
+  font-weight: bold;
+}
+
+.benefits-mobile span {
+  color: #004c98;
+}
+
+.benefits-text-mobile {
+  padding: 24px 0 0 0px;
+  background: #004c98;
+  color: white;
+}
+
+.diluition-container-mobile {
+  border: 1px solid #004c98;
+  border-radius: 10px;
+  height: auto;
+  width: 80%;
+  color: #004c98;
+  font-weight: bold;
+}
+
+.diluition-container-mobile h1 {
+  position: absolute;
+  top: -25px;
+  margin: 0 auto;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  background-color: #83bdd6;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.diluition-reference-mobile {
+  width: 70vw;
+  padding: 8px 16px;
+  border: 1px solid #004c98;
+  border-radius: 30px;
+}
+
+.diluition-reference-mobile .pink-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #e23968;
+}
+
+.diluition-reference-mobile .blue-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #00f5ff;
 }
