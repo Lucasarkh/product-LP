@@ -1,4 +1,4 @@
-# LAnding page de produto 
+# Landing page de produto 
 
 ## Tópicos
 
@@ -19,7 +19,7 @@
 
 ### Principais desafios superados
 
-- Explorar o framwork Bootstrap.
+- Explorar o framework Bootstrap.
 - Página totalmente responsiva.
 
 ### Como funciona?
